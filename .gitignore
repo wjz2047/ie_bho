@@ -2,3 +2,5 @@
 *.sdf
 *.suo
 *.ipch
+SevenFanli/Debug/*
+Debug/*
