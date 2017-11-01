@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SevenFanli", "SevenFanli\SevenFanli.vcxproj", "{14AA7726-D1CF-4D08-958A-B55C90F54AF0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SevenFanliPS", "SevenFanli\SevenFanliPS.vcxproj", "{033F50CF-BA2D-4C88-AFFA-26D1128EE736}"
+	ProjectSection(ProjectDependencies) = postProject
+		{14AA7726-D1CF-4D08-958A-B55C90F54AF0} = {14AA7726-D1CF-4D08-958A-B55C90F54AF0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14AA7726-D1CF-4D08-958A-B55C90F54AF0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{14AA7726-D1CF-4D08-958A-B55C90F54AF0}.Debug|Win32.Build.0 = Debug|Win32
+		{14AA7726-D1CF-4D08-958A-B55C90F54AF0}.Release|Win32.ActiveCfg = Release|Win32
+		{14AA7726-D1CF-4D08-958A-B55C90F54AF0}.Release|Win32.Build.0 = Release|Win32
+		{033F50CF-BA2D-4C88-AFFA-26D1128EE736}.Debug|Win32.ActiveCfg = Debug|Win32
+		{033F50CF-BA2D-4C88-AFFA-26D1128EE736}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

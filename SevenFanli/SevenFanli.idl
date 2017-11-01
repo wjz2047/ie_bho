@@ -1,0 +1,18 @@
+// SevenFanli.idl : SevenFanli 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(SevenFanli.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(0677E7C1-6901-4F4F-AEDE-7DC666E76E13),
+	version(1.0),
+]
+library SevenFanliLib
+{
+	importlib("stdole2.tlb");
+};
+
