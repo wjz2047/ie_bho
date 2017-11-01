@@ -121,6 +121,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SevenFanli.cpp" />
+    <ClCompile Include="SevenFanliBHO.cpp" />
     <ClCompile Include="SevenFanli_i.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="dllmain.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SevenFanliBHO.h" />
     <ClInclude Include="SevenFanli_i.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -148,6 +150,7 @@
     <None Include="ReadMe.txt" />
     <None Include="SevenFanli.def" />
     <None Include="SevenFanli.rgs" />
+    <None Include="SevenFanliBHO.rgs" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="SevenFanli.idl" />

@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {412A357C-CB48-48E1-91C1-EA9B7DEDB3A4} = s 'SevenFanliBHO Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{0677E7C1-6901-4F4F-AEDE-7DC666E76E13}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -8,11 +8,27 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(0B492775-374F-43FA-9206-B9CED981708A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ISevenFanliBHO : IDispatch{
+};
+[
 	uuid(0677E7C1-6901-4F4F-AEDE-7DC666E76E13),
 	version(1.0),
 ]
 library SevenFanliLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(412A357C-CB48-48E1-91C1-EA9B7DEDB3A4)		
+	]
+	coclass SevenFanliBHO
+	{
+		[default] interface ISevenFanliBHO;
+	};
 };
 
