@@ -60,7 +60,6 @@ public:
 		SINK_ENTRY_EX(1, DIID_DWebBrowserEvents2, DISPID_DOWNLOADCOMPLETE, OnDownloadComplete)
 	END_SINK_MAP()  
 
-	// DWebBrowserEvents2  
 	void STDMETHODCALLTYPE OnBeforeNavigate2(IDispatch* pDisp, VARIANT* URL, 
 		VARIANT* pvtFlags,
 		VARIANT* pvtTargetFrameName, 
@@ -69,10 +68,11 @@ public:
 		VARIANT_BOOL* pvbCancel);
 	void STDMETHODCALLTYPE OnDocumentComplete(IDispatch *pDisp, VARIANT *pvarURL);  
 	void STDMETHODCALLTYPE OnDownloadComplete();
+	bool isMainFrame(IDispatch *pDisp);
 private:  
 	CComPtr<IWebBrowser2>  m_spWebBrowser;  
 	BOOL m_fAdvised;  
-	BOOL m_isRefresh;
+	BOOL m_isDocumentComplete;
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(SevenFanliBHO), CSevenFanliBHO)
